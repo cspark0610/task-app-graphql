@@ -1,0 +1,10 @@
+mutation UpdateTask($input: UpdateTaskInput!) {
+	updateTask(input: $input) {
+		id
+		title
+		status
+	}
+}
+# LA 1RA LINEA ES EL NOMBRE DE LA MUTATION
+## LA SEGUNDA LINEA ES LA mutation function que se recibe como tupla cuando se ejecuta el hook Y LO QUE ESPERO EN EL RETURN
+### el segundo elemento de la tupla es el objeto result el cual tiene como prop {data, loading , error}
